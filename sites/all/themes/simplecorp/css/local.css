@@ -59,21 +59,25 @@ div#block-user-login li.last {
 
 /*Hide mobile login button by default*/
 a.login-button {
-    color: black;
-    width: 50px;
-    border-radius: 6px;
-    -moz-border-radius: 6px;
-    -webkit-border-radius: 6px;
-    cursor: pointer;
-    -webkit-appearance: button;
-    border: 1px solid #2F709B !important;
-    padding: 7px;
+    text-align: center;
     display: none;
+    padding: 4px 0;
 }
 
 /*Hide "create new account" tab in login forms*/
 ul.tabs li a[href="/user/register"] {
     display: none;
+}
+
+/*Fix menu crashing into shorter pre-header*/
+#main-navigation ul.menu li a{
+    padding: 27px 12px 50px 12px;
+    margin: 20px 0 10px 0;
+}
+
+/*Mobile menu*/
+.front #banner {
+    padding-top: 44px;
 }
 
 /*-------------------------------------------*/
@@ -138,14 +142,14 @@ ul.tabs li a[href="/user/register"] {
     
     /*Make top blue area shorter*/
     div#pre-header {
-        min-height: 67px;
+        height: auto;
         margin: 0 0 10px -20px;
     }
     
     /*reduce space for logo area*/
     div#header {
         padding: 0px 0 43px 0;
-        height: 68px;
+        height: 110px;
     }
     
     /*Make login page tabs narrower*/
