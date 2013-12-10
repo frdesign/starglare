@@ -1,0 +1,156 @@
+/*  CSS Overrides */
+
+/*Get rid of space above header*/
+div#page {
+    margin: 0 auto 0;
+}
+
+/*Make top blue area shorter*/
+div#pre-header {
+    min-height: 24px;
+    margin: 0 0 10px -40px;
+}
+
+
+/* Fix ugly login form in landing page */
+
+div#block-user-login {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div#block-user-login h2, div#block-user-login li.first{
+    display: none;
+}
+
+div#block-user-login div.form-item-name, #block-user-login div.form-item-pass {
+    float: left;
+    margin: 2.5em 1em 0 0;
+}
+
+div#block-user-login li.last{
+    clear: left;
+}
+
+div#block-user-login label {
+    font-size: 12px;
+    line-height: 0.5;
+}
+
+div#block-user-login input.form-text{
+    height: .5em;
+}
+
+div#block-user-login input#edit-submit {
+    float: right;
+    margin: 0 .8em 0 0;
+    padding: 6px 14px;
+}
+
+div#block-user-login li.last {
+    float: left;
+    margin: .8em 0 0 0;
+    list-style: none;
+    font-size: 12px;
+    line-height: 0.5;
+}
+
+/*Hide mobile login button by default*/
+a.login-button {
+    color: black;
+    width: 50px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    cursor: pointer;
+    -webkit-appearance: button;
+    border: 1px solid #2F709B !important;
+    padding: 7px;
+    display: none;
+}
+
+/*Hide "create new account" tab in login forms*/
+ul.tabs li a[href="/user/register"] {
+    display: none;
+}
+
+/*-------------------------------------------*/
+/* #Tablet (Portrait)*/
+/*-------------------------------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1020px) {
+    
+    /*Make top blue area shorter*/
+    div#pre-header {
+        min-height: 24px;
+        margin: 0 0 10px -20px;
+    }
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    
+    /*Make top blue area shorter*/
+    div#pre-header {
+        min-height: 24px;
+        margin: 0 0 10px -20px;
+    }
+    
+    div#block-user-login {
+        float: left;
+        position: absolute;
+        top: 6.7em;
+        left: 21px;
+    }
+    
+    div#block-user-login label {
+        font-size: 11px;
+        line-height: 0.3;
+    }
+    
+    div#block-user-login li.last {
+        font-size: 11px;
+        margin: .5em 0 0 0;
+    }
+    
+    div#block-user-login input#edit-submit {
+        margin: 0 .7em 0 0;
+        padding: 5px 12px;
+        position: absolute;
+        top: 5.8em;
+    }
+
+}
+
+/*-------------------------------------------*/
+/* #MOBILE 320px (Portrait)*/
+/*-------------------------------------------*/
+@media only screen and (max-width: 480px) , screen and (max-device-width: 480px) {
+    div#block-user-login {
+        display: none;
+    }
+    
+    /*Show mobile login button*/
+    a.login-button {
+        display: block;
+    }
+    
+    /*Make top blue area shorter*/
+    div#pre-header {
+        min-height: 67px;
+        margin: 0 0 10px -20px;
+    }
+    
+    /*reduce space for logo area*/
+    div#header {
+        padding: 0px 0 43px 0;
+        height: 68px;
+    }
+    
+    /*Make login page tabs narrower*/
+    ul.primary li {
+        margin: -2px;
+    }
+
+}
