@@ -571,9 +571,9 @@
                     <?php print render($page['footer']); ?>
                     <?php endif; ?>
                     
-                    <div class="credits">
+                    <!--<div class="credits">
                     Ported to Drupal by <a href="http://www.drupalizing.com">Drupalizing</a> a Project of <a href="http://www.morethanthemes.com">More than Themes</a>. Designed by <a href="http://www.s5themes.com/">Site5 WordPress Themes</a>. 
-                    </div>
+                    </div>-->
 
                 </div>
             </div>

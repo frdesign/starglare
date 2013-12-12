@@ -64,6 +64,12 @@ a.login-button {
     padding: 4px 0;
 }
 
+.site-button {
+    text-align: center;
+    padding: 4px 6px;
+    text-transform: uppercase;
+}
+
 /*Hide "create new account" tab in login forms*/
 ul.tabs li a[href="/user/register"] {
     display: none;
