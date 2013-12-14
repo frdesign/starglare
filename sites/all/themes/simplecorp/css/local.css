@@ -86,6 +86,14 @@ ul.tabs li a[href="/user/register"] {
     padding-top: 44px;
 }
 
+/* User Profile Edit Form ____________________________________*/
+
+/* Hide edit timezon field now that timezone module
+should set it automatically on first login */
+fieldset#edit-timezone {
+    display: none;
+}
+
 /*-------------------------------------------*/
 /* #Tablet (Portrait)*/
 /*-------------------------------------------*/
