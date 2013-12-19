@@ -1,5 +1,9 @@
 /*  CSS Overrides */
 
+/*Branding Colors _________________________________*/
+/* Blue #0074C8
+  Red #ED1C24 */
+
 /*Get rid of space above header*/
 div#page {
     margin: 0 auto 0;
@@ -86,13 +90,37 @@ ul.tabs li a[href="/user/register"] {
     padding-top: 44px;
 }
 
-/* User Profile Edit Form ____________________________________*/
+/* User Profile ____________________________________*/
 
-/* Hide edit timezon field now that timezone module
+/* Hide user edit timezon field now that timezone module
 should set it automatically on first login */
 fieldset#edit-timezone {
     display: none;
 }
+
+/* Turn follow/unfollow links into buttons */
+span.flag-follow-users a {
+    background: #ED1C24;
+    padding: 6px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+span.flag-follow-users a:hover {
+    background: #0074C8;
+}
+
+span.flag-follow-users a.unflag-action {
+    background: #0074C8;
+}
+
+span.flag-follow-users a.unflag-action:hover {
+    background: #ED1C24;
+}
+
 
 /*-------------------------------------------*/
 /* #Tablet (Portrait)*/
